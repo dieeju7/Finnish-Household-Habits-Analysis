@@ -31,12 +31,14 @@ The project addresses the following key questions:
 ---
 
 ## Repository Structure
-
+project
 - habits.data 
 - habits.txt 
-- project_group_016.ipynb 
-- project_group_016.pdf
-- README.md 
+- project_group_016.ipynb
+
+project_group_016.pdf
+
+README.md 
 
 
 
@@ -119,11 +121,11 @@ These methods allow identification of activities that tend to occur together or 
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/finnish-habits-analysis.git
+git clone https://github.com/dieeju7/Statistical-Data-Analysis.git
 ```
 ### 2. Navigate into the project folder
 ```
-cd finnish-habits-analysis
+cd project
 ```
 ### 3. Install dependencies
 ```
