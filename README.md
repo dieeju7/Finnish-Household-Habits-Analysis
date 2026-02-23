@@ -1,138 +1,166 @@
-## Customer Segmentation using Hierarchical Clustering
-
-This project explores customer segmentation using Agglomerative Hierarchical Clustering combined with PCA visualization and Silhouette analysis to evaluate clustering performance.
-
-The objective was to identify meaningful customer groups and compare different linkage methods to determine the most appropriate clustering structure.
-
+# Finnish Household Habits Analysis
 
 ## Project Overview
 
-Clustering is an unsupervised learning technique used to group similar observations. In this project, I:
+This project presents a comprehensive statistical analysis of Finnish household time-use survey data. The objective is to understand how individuals and households in Finland allocate their daily time across various activities, and to investigate differences between demographic groups, living environments, and days of the week.
 
-- Standardized the dataset
+The analysis was conducted in response to a research request from the Head of Research and is designed to be fully reproducible and understandable even for non-statistical audiences.
 
-- Applied Agglomerative Clustering
+---
 
-- Compared multiple linkage methods: Ward, Complete, Average, Single
+## Research Objectives
 
-- Evaluated performance using Silhouette Score
+The project addresses the following key questions:
 
-- Visualized clusters using Principal Component Analysis (PCA)
+1. **Characterisation of Individuals**
+   - Who are the individuals present in the dataset?
+   - What are their demographic and household characteristics?
 
+2. **Average Time Allocation**
+   - How much time do Finnish households spend daily on each activity on average?
+
+3. **Differences Across Groups**
+   - Do activities differ by:
+     - Living environment (e.g., urban vs rural)?
+     - Day of the week (weekday vs weekend)?
+
+4. **Associations Between Activities**
+   - Which activities are statistically associated with each other?
+   - Are there patterns or clusters of behaviours?
+
+---
+
+## Repository Structure
+
+- habits.data 
+- habits.txt 
+- project_group_016.ipynb 
+- project_group_016.pdf
+- README.md 
+
+
+
+---
+
+## Methodology
+
+The analysis was conducted using Python in a Jupyter Notebook environment.
+
+### 1️ Data Preparation
+
+- Loaded and cleaned the dataset  
+- Checked for missing values and inconsistencies  
+- Converted time-use variables into meaningful units where necessary  
+- Verified variable definitions using `habits.txt`  
+
+### 2️ Descriptive Analysis
+
+**Objective:** Characterise individuals and understand general time-use patterns.
+
+Methods used:
+- Summary statistics (mean, median, standard deviation)
+- Frequency tables for categorical variables
+- Visualisations (bar plots, histograms, boxplots)
+
+### 3️ Group Comparisons
+
+**Objective:** Determine whether time use differs across:
+- Living environments
+- Days of the week
+
+Methods used:
+- Independent samples t-tests
+- ANOVA (where more than two groups exist)
+- Assumption checks (normality, variance homogeneity)
+- Grouped visualisations
+
+### 4️ Association Analysis
+
+**Objective:** Identify relationships between activities.
+
+Methods used:
+- Correlation matrix (Pearson correlation)
+- Heatmaps
+- Principal Component Analysis (PCA) or clustering (if applied)
+
+These methods allow identification of activities that tend to occur together or substitute for each other.
+
+---
+
+##  Key Findings
+
+- Finnish households spend the largest proportion of time on **[e.g., sleep, work, household tasks]**.
+- Significant differences were observed between:
+  - Urban and rural populations in **[e.g., commuting, leisure]**
+  - Weekdays and weekends in **[e.g., work, social activities]**
+- Strong positive correlations were found between:
+  - **[Activity A] and [Activity B]**
+- Negative associations were observed between:
+  - **[Activity C] and [Activity D]**
+
+---
 
 ## Technologies Used
 
-- Python
+- Python 3.x  
+- Jupyter Notebook  
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scipy  
+- statsmodels  
+- scikit-learn 
 
-- Pandas
+---
 
-- NumPy
+##  How to Run the Analysis
 
-- Scikit-learn
+### 1. Clone the repository
 
-- Matplotlib
+```
+git clone https://github.com/your-username/finnish-habits-analysis.git
+```
+### 2. Navigate into the project folder
+```
+cd finnish-habits-analysis
+```
+### 3. Install dependencies
+```
+pip install -r requirements.txt
+```
+## 4. Launch the notebook: jupyter notebook project_group_016.ipynb
 
-- Seaborn
-
-## Methodology
-1. Data Preprocessing
-
-- Feature scaling using standardization
-
-- Preparation of matrix X = data_standardized
-
-2. Clustering
-
-For each:
-
-- Number of clusters: 2 → 10
-
-- Linkage methods: Ward, Complete, Average, Single
-
-I:
-
-- Fit AgglomerativeClustering
-
-- Computed silhouette score
-
-- Stored results including cluster labels
-
-results.append({
-    "num_of_clusters": n_clusters,
-    "linkage": linkage,
-    "silhouette_score": score,
-    "labels": labels
-})
-
-3. Model Evaluation
-
-Clustering performance was compared using:
-
-- Silhouette Score
-
-- Visual inspection in PCA space
-
-The four best Ward-linkage models were selected and visualized for comparison.
+Run all cells to reproduce the analysis and results.
 
 
-## Key Findings
 
-- Ward linkage produced the most stable and interpretable clusters.
+## Reproducibility
 
-- Silhouette score helped identify optimal cluster numbers.
+- All data processing, statistical analysis, and visualisation code is included in the notebook.
 
-- Visual inspection in PCA space confirmed separation quality.
+- Output is shown directly below each code cell.
 
-- Storing cluster labels ensured accurate visualization across models.
+- The report is fully reproducible.
 
-This project highlights the importance of:
+## Interpretation Notes
 
-- Combining quantitative metrics with visual validation
+- Statistical significance was evaluated at α = 0.05 unless otherwise stated.
 
-- Careful result tracking when comparing multiple models
+- Where assumptions were violated, appropriate alternatives were considered.
 
-- Debugging clustering pipelines through visual consistency checks
+- Correlation does not imply causation - associations are interpreted descriptively.
 
+## Deliverable
 
-## Example Output
+- This repository contains:
 
-The project includes:
+- A complete statistical analysis
 
-- Silhouette score comparison table
+- Documented methodology
 
-- PCA cluster visualizations
+- Code and output
 
-- Best-performing clustering configurations
+- Clear conclusions addressing the research questions
 
-## How to Run
-
-Clone the repository
-
-Install dependencies: 
-       -pip install pandas numpy scikit-learn matplotlib seaborn
-
-Open the jupyter notebook:
-jupyter notebook ThuVu_DAKD_2025_exercise_1.ipynb
-
-## Project Structure
-- ThuVu_DAKD_2025_exercise_1.ipynb
-- README.md
-- shopping_centre.csv
-
-## Skills Demonstrated
-
-Unsupervised Machine Learning
-
-Hierarchical Clustering
-
-Model Evaluation (Silhouette Score)
-
-PCA for dimensionality reduction
-
-Analytical debugging
-
-Experimental result tracking
-
-Data visualization
-
-
+The final report is intended for presentation to the Board and is written to be accessible to readers without a statistical background.
