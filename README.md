@@ -121,7 +121,7 @@ These methods allow identification of activities that tend to occur together or 
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/dieeju7/Statistical-Data-Analysis.git
+git clone https://github.com/dieeju7/Finnish-Household-Habits-Analysis.git
 ```
 ### 2. Navigate into the project folder
 ```
