@@ -128,7 +128,7 @@ cd project
 ```
 pip install -r requirements.txt
 ```
-## 4. Launch the notebook: jupyter notebook project_group_016.ipynb
+### 4. Launch the notebook: jupyter notebook Finnish-Household-Habits-Analysis.ipynb
 
 Run all cells to reproduce the analysis and results.
 
