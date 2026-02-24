@@ -34,9 +34,9 @@ The project addresses the following key questions:
 
 ```
 project
+├── Finnish-Household-Habits-Analysis.ipynb
 ├── habits.data
-├── habits.txt
-└── Finnish-Household-Habits-Analysis.ipynb
+└── habits.txt
 Finnish-Household-Habits-Analysis.pdf
 README.md
 ```
