@@ -31,17 +31,14 @@ The project addresses the following key questions:
 ---
 
 ## Repository Structure
-project
-- habits.data 
-- habits.txt 
-- project_group_016.ipynb
 
-project_group_016.pdf
-
-README.md 
-
-
-
+```
+.
+├── habits.data
+├── habits.txt
+├── Finnish-Household-Habits-Analysis.ipynb
+└── README.md
+```
 ---
 
 ## Methodology
