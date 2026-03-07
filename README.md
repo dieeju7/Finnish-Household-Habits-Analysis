@@ -8,40 +8,19 @@ The analysis was conducted in response to a research request from the Head of Re
 
 ---
 
-## Research Objectives
+## Technologies Used
 
-The project addresses the following key questions:
-
-1. **Characterisation of Individuals**
-   - Who are the individuals present in the dataset?
-   - What are their demographic and household characteristics?
-
-2. **Average Time Allocation**
-   - How much time do Finnish households spend daily on each activity on average?
-
-3. **Differences Across Groups**
-   - Do activities differ by:
-     - Living environment (e.g., urban vs rural)?
-     - Day of the week (weekday vs weekend)?
-
-4. **Associations Between Activities**
-   - Which activities are statistically associated with each other?
-   - Are there patterns or clusters of behaviours?
+- Python 3.x  
+- Jupyter Notebook  
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scipy  
+- statsmodels  
+- scikit-learn 
 
 ---
-
-## Repository Structure
-
-```
-project
-├── Finnish-Household-Habits-Analysis.ipynb
-├── habits.data
-└── habits.txt
-Finnish-Household-Habits-Analysis.pdf
-README.md
-```
----
-
 ## Methodology
 
 The analysis was conducted using Python in a Jupyter Notebook environment.
@@ -87,6 +66,41 @@ These methods allow identification of activities that tend to occur together or 
 
 ---
 
+
+## Research Objectives
+
+The project addresses the following key questions:
+
+1. **Characterisation of Individuals**
+   - Who are the individuals present in the dataset?
+   - What are their demographic and household characteristics?
+
+2. **Average Time Allocation**
+   - How much time do Finnish households spend daily on each activity on average?
+
+3. **Differences Across Groups**
+   - Do activities differ by:
+     - Living environment (e.g., urban vs rural)?
+     - Day of the week (weekday vs weekend)?
+
+4. **Associations Between Activities**
+   - Which activities are statistically associated with each other?
+   - Are there patterns or clusters of behaviours?
+
+---
+
+## Repository Structure
+
+```
+project
+├── Finnish-Household-Habits-Analysis.ipynb
+├── habits.data
+└── habits.txt
+Finnish-Household-Habits-Analysis.pdf
+README.md
+```
+---
+
 ##  Key Findings
 
 - Finnish households spend the largest proportion of time on **[e.g., sleep, work, household tasks]**.
@@ -100,19 +114,6 @@ These methods allow identification of activities that tend to occur together or 
 
 ---
 
-## Technologies Used
-
-- Python 3.x  
-- Jupyter Notebook  
-- pandas  
-- numpy  
-- matplotlib  
-- seaborn  
-- scipy  
-- statsmodels  
-- scikit-learn 
-
----
 
 ##  How to Run the Analysis
 
